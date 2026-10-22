@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Quiz para a Stella</title>
+     <meta name="description"  content="Um quiz para advinhar o QI da minha irmã Stella">
+     <link rel="stylesheet" href="cordastella.css">
+</head>
+    <body>
+    <img src="Stella Zoada 2.0.jpg" alt="Stella" width="300" height="300">
+    <header>
+        <h1>Quiz para a Stella</h1>
+        <p>Testar o QI da Stella e ver se ela é burra</p>
+    </header>
+    <main>
+        <h2>Pergunta 1</h2>
+    <p>Qual é o capital do Brasil?</p>
+</section>
+<section>
+    <form> 
+        <input type ="radio" value="errado" id="p1a" name="PERGUNTA 1">
+        <label for="p1a">São Paulo</label><br>
+        <input type ="radio" value="errado" id="p1b" name="PERGUNTA 1">
+        <label for="p1b">Rio de Janeiro</label><br>
+        <input type ="radio" value="certo" id="p1c" name="PERGUNTA 1">
+        <label for="p1c">Brasília</label><br>
+        <input type ="radio" value="errado" id="p1d" name="PERGUNTA 1">
+        <label for="p1d">Santa Catarina</label><br>
+    </form>
+</section>
+<section> 
+<input type="button" value="Verificar" onclick="verificar()">
+<script>
+    function verificar() {
+        var resposta = document.querySelector('input[name="PERGUNTA 1"]:checked').value;
+        if (resposta === "certo") {
+            alert("Parabéns! Você acertou!");
+        } else {
+            alert("Ops! Você errou. A resposta correta é Brasília.");
+        }
+    }
+</script>
+</section>
+</main>
+<footer></footer>
+    </body>
+
+
+
+
+
+
+<html>
